@@ -1,0 +1,245 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MP3"
+Date "2020-09-23"
+Rev "v01"
+Comp ""
+Comment1 ""
+Comment2 "creativecommons.org/licenses/by/4.0/"
+Comment3 "License: CC by 4.0"
+Comment4 "Author(s): Charles Randolph, Jacob Hejderup "
+$EndDescr
+$Comp
+L Battery_Management:MAX1811 U?
+U 1 1 5F6B9199
+P 2300 1300
+F 0 "U?" H 2350 1767 50  0000 C CNN
+F 1 "MAX1811" H 2350 1676 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2550 950 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1811.pdf" H 2300 600 50  0001 C CNN
+	1    2300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5F6BDB8B
+P 1150 1300
+F 0 "J?" H 1207 1767 50  0000 C CNN
+F 1 "USB_B_Micro" H 1207 1676 50  0000 C CNN
+F 2 "" H 1300 1250 50  0001 C CNN
+F 3 "~" H 1300 1250 50  0001 C CNN
+	1    1150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mp3:LTC3025 U?
+U 1 1 5F6BFABA
+P 5200 1250
+F 0 "U?" H 5200 1765 50  0000 C CNN
+F 1 "LTC3025" H 5200 1674 50  0000 C CNN
+F 2 "" H 5350 1250 50  0001 C CNN
+F 3 "" H 5350 1250 50  0001 C CNN
+	1    5200 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mp3:ADP2503 U?
+U 1 1 5F6C1E83
+P 4250 2400
+F 0 "U?" H 4250 3015 50  0000 C CNN
+F 1 "ADP2503" H 4250 2924 50  0000 C CNN
+F 2 "" H 4250 2900 50  0001 C CNN
+F 3 "" H 4250 2900 50  0001 C CNN
+	1    4250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CBC09
+P 2400 1700
+F 0 "#PWR?" H 2400 1450 50  0001 C CNN
+F 1 "GND" H 2405 1527 50  0000 C CNN
+F 2 "" H 2400 1700 50  0001 C CNN
+F 3 "" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CC24F
+P 1150 1700
+F 0 "#PWR?" H 1150 1450 50  0001 C CNN
+F 1 "GND" H 1155 1527 50  0000 C CNN
+F 2 "" H 1150 1700 50  0001 C CNN
+F 3 "" H 1150 1700 50  0001 C CNN
+	1    1150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CE1FF
+P 2300 1700
+F 0 "#PWR?" H 2300 1450 50  0001 C CNN
+F 1 "GND" H 2305 1527 50  0000 C CNN
+F 2 "" H 2300 1700 50  0001 C CNN
+F 3 "" H 2300 1700 50  0001 C CNN
+	1    2300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F6CF4E3
+P 3200 650
+F 0 "J?" V 3072 730 50  0000 L CNN
+F 1 "Conn_01x02" V 3163 730 50  0000 L CNN
+F 2 "" H 3200 650 50  0001 C CNN
+F 3 "~" H 3200 650 50  0001 C CNN
+	1    3200 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6D3C3E
+P 3200 850
+F 0 "#PWR?" H 3200 600 50  0001 C CNN
+F 1 "GND" H 3205 677 50  0000 C CNN
+F 2 "" H 3200 850 50  0001 C CNN
+F 3 "" H 3200 850 50  0001 C CNN
+	1    3200 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 850  3300 1100
+$Comp
+L Device:C C?
+U 1 1 5F6D6A5B
+P 1650 1550
+F 0 "C?" H 1765 1596 50  0000 L CNN
+F 1 "4.7uF" H 1765 1505 50  0000 L CNN
+F 2 "" H 1688 1400 50  0001 C CNN
+F 3 "~" H 1650 1550 50  0001 C CNN
+	1    1650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F6D7205
+P 3300 1550
+F 0 "C?" H 3415 1596 50  0000 L CNN
+F 1 "2.2uF" H 3415 1505 50  0000 L CNN
+F 2 "" H 3338 1400 50  0001 C CNN
+F 3 "~" H 3300 1550 50  0001 C CNN
+	1    3300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1100 1850 1200
+Wire Wire Line
+	1850 1500 1900 1500
+Connection ~ 1850 1100
+Wire Wire Line
+	1850 1100 1900 1100
+Wire Wire Line
+	1900 1400 1850 1400
+Connection ~ 1850 1400
+Wire Wire Line
+	1850 1400 1850 1500
+Wire Wire Line
+	1900 1200 1850 1200
+Connection ~ 1850 1200
+Wire Wire Line
+	1850 1200 1850 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5F6DE094
+P 1650 1700
+F 0 "#PWR?" H 1650 1450 50  0001 C CNN
+F 1 "GND" H 1655 1527 50  0000 C CNN
+F 2 "" H 1650 1700 50  0001 C CNN
+F 3 "" H 1650 1700 50  0001 C CNN
+	1    1650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6DE6FD
+P 3300 1700
+F 0 "#PWR?" H 3300 1450 50  0001 C CNN
+F 1 "GND" H 3305 1527 50  0000 C CNN
+F 2 "" H 3300 1700 50  0001 C CNN
+F 3 "" H 3300 1700 50  0001 C CNN
+	1    3300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1400 3300 1100
+Connection ~ 3300 1100
+Wire Wire Line
+	1450 1100 1650 1100
+Wire Wire Line
+	1650 1400 1650 1100
+Connection ~ 1650 1100
+Wire Wire Line
+	1650 1100 1850 1100
+$Comp
+L Device:LED D?
+U 1 1 5F6E17D4
+P 2150 650
+F 0 "D?" H 2143 867 50  0000 C CNN
+F 1 "LED" H 2143 776 50  0000 C CNN
+F 2 "" H 2150 650 50  0001 C CNN
+F 3 "~" H 2150 650 50  0001 C CNN
+	1    2150 650 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2800 1300 2850 1300
+Wire Wire Line
+	2800 1100 3300 1100
+$Comp
+L Device:R R?
+U 1 1 5F6F28E0
+P 1650 800
+F 0 "R?" H 1720 846 50  0000 L CNN
+F 1 "200" H 1720 755 50  0000 L CNN
+F 2 "" V 1580 800 50  0001 C CNN
+F 3 "~" H 1650 800 50  0001 C CNN
+	1    1650 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1100 1650 950 
+Wire Wire Line
+	1650 650  2000 650 
+Wire Wire Line
+	2300 650  2850 650 
+Wire Wire Line
+	2850 650  2850 1300
+Wire Wire Line
+	3300 1100 4850 1100
+Wire Wire Line
+	3900 2100 3800 2100
+Wire Wire Line
+	3800 2100 3800 1250
+Wire Wire Line
+	3800 1250 4850 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5F710993
+P 5550 1400
+F 0 "#PWR?" H 5550 1150 50  0001 C CNN
+F 1 "GND" H 5555 1227 50  0000 C CNN
+F 2 "" H 5550 1400 50  0001 C CNN
+F 3 "" H 5550 1400 50  0001 C CNN
+	1    5550 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1100 6150 1100
+Text Label 6000 1100 0    50   ~ 0
+Vdd
+$EndSCHEMATC
