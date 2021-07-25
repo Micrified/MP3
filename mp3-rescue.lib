@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# mp3-rescue_ADP2503-mp3
+# ADP2503-mp3
 #
-DEF mp3-rescue_ADP2503-mp3 U 0 40 Y Y 1 F N
+DEF ADP2503-mp3 U 0 40 Y Y 1 F N
 F0 "U" 0 500 50 H V C CNN
-F1 "mp3-rescue_ADP2503-mp3" 0 -500 50 H V C CNN
+F1 "ADP2503-mp3" 0 -500 50 H V C CNN
 F2 "" 0 500 50 H I C CNN
 F3 "" 0 500 50 H I C CNN
 DRAW
@@ -23,11 +23,11 @@ X AGND 9 350 -300 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_C-Device
+# C-Device
 #
-DEF mp3-rescue_C-Device C 0 10 N Y 1 F N
+DEF C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "mp3-rescue_C-Device" 25 -100 50 H V L CNN
+F1 "C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -41,11 +41,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_Conn_01x02-Connector_Generic
+# Conn_01x02-Connector_Generic
 #
-DEF mp3-rescue_Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "mp3-rescue_Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
+F1 "Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -60,11 +60,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_GND-power
+# GND-power
 #
-DEF mp3-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "mp3-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -73,11 +73,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_L-Device
+# L-Device
 #
-DEF mp3-rescue_L-Device L 0 40 N N 1 F N
+DEF L-Device L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "mp3-rescue_L-Device" 75 0 50 V V C CNN
+F1 "L-Device" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -96,11 +96,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_LED-Device
+# LED-Device
 #
-DEF mp3-rescue_LED-Device D 0 40 N N 1 F N
+DEF LED-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "mp3-rescue_LED-Device" 0 -100 50 H V C CNN
+F1 "LED-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -119,11 +119,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_LTC3025-mp3
+# LTC3025-mp3
 #
-DEF mp3-rescue_LTC3025-mp3 U 0 40 Y Y 1 F N
+DEF LTC3025-mp3 U 0 40 Y Y 1 F N
 F0 "U" 0 350 50 H V C CNN
-F1 "mp3-rescue_LTC3025-mp3" 0 -350 50 H V C CNN
+F1 "LTC3025-mp3" 0 -350 50 H V C CNN
 F2 "" 150 0 50 H I C CNN
 F3 "" 150 0 50 H I C CNN
 DRAW
@@ -138,11 +138,11 @@ X ~SHDN 6 -350 -150 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_MAX1811-Battery_Management
+# MAX1811-Battery_Management
 #
-DEF mp3-rescue_MAX1811-Battery_Management U 0 40 Y Y 1 F N
+DEF MAX1811-Battery_Management U 0 40 Y Y 1 F N
 F0 "U" -300 350 50 H V L CNN
-F1 "mp3-rescue_MAX1811-Battery_Management" 400 350 50 H V R CNN
+F1 "MAX1811-Battery_Management" 400 350 50 H V R CNN
 F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 250 -350 50 H I L CNN
 F3 "" 0 -700 50 H I C CNN
 $FPLIST
@@ -161,11 +161,11 @@ X ~CHG 8 500 0 100 L 50 50 1 1 C
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_R-Device
+# R-Device
 #
-DEF mp3-rescue_R-Device R 0 0 N Y 1 F N
+DEF R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "mp3-rescue_R-Device" 0 0 50 V V C CNN
+F1 "R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -178,11 +178,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mp3-rescue_USB_B_Micro-Connector
+# USB_B_Micro-Connector
 #
-DEF mp3-rescue_USB_B_Micro-Connector J 0 40 Y Y 1 F N
+DEF USB_B_Micro-Connector J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "mp3-rescue_USB_B_Micro-Connector" -200 350 50 H V L CNN
+F1 "USB_B_Micro-Connector" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 $FPLIST

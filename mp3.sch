@@ -14,10 +14,10 @@ Comment3 "License: CC by 4.0"
 Comment4 "Author(s): Charles Randolph, Jacob Hejderup "
 $EndDescr
 $Comp
-L Battery_Management:MAX1811 U?
+L mp3-rescue:MAX1811-Battery_Management U1
 U 1 1 5F6B9199
 P 2250 1800
-F 0 "U?" H 2300 2267 50  0000 C CNN
+F 0 "U1" H 2300 2267 50  0000 C CNN
 F 1 "MAX1811" H 2300 2176 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2500 1450 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1811.pdf" H 2250 1100 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1811.pdf" H 2250 1100 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J?
+L mp3-rescue:USB_B_Micro-Connector J1
 U 1 1 5F6BDB8B
 P 1100 1800
-F 0 "J?" H 1157 2267 50  0000 C CNN
+F 0 "J1" H 1157 2267 50  0000 C CNN
 F 1 "USB_B_Micro" H 1157 2176 50  0000 C CNN
 F 2 "" H 1250 1750 50  0001 C CNN
 F 3 "~" H 1250 1750 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "~" H 1250 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mp3:LTC3025 U?
+L mp3-rescue:LTC3025-mp3 U3
 U 1 1 5F6BFABA
 P 5450 1100
-F 0 "U?" H 5450 1615 50  0000 C CNN
+F 0 "U3" H 5450 1615 50  0000 C CNN
 F 1 "LTC3025" H 5450 1524 50  0000 C CNN
 F 2 "" H 5600 1100 50  0001 C CNN
 F 3 "" H 5600 1100 50  0001 C CNN
@@ -47,7 +47,7 @@ F 3 "" H 5600 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6CBC09
 P 2350 2200
 F 0 "#PWR?" H 2350 1950 50  0001 C CNN
@@ -58,7 +58,7 @@ F 3 "" H 2350 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6CC24F
 P 1100 2200
 F 0 "#PWR?" H 1100 1950 50  0001 C CNN
@@ -69,7 +69,7 @@ F 3 "" H 1100 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6CE1FF
 P 2250 2200
 F 0 "#PWR?" H 2250 1950 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "" H 2250 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L mp3-rescue:Conn_01x02-Connector_Generic J2
 U 1 1 5F6CF4E3
 P 3150 1150
-F 0 "J?" V 3022 1230 50  0000 L CNN
+F 0 "J2" V 3022 1230 50  0000 L CNN
 F 1 "Conn_01x02" V 3113 1230 50  0000 L CNN
 F 2 "" H 3150 1150 50  0001 C CNN
 F 3 "~" H 3150 1150 50  0001 C CNN
@@ -91,7 +91,7 @@ F 3 "~" H 3150 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6D3C3E
 P 3150 1350
 F 0 "#PWR?" H 3150 1100 50  0001 C CNN
@@ -104,10 +104,10 @@ $EndComp
 Wire Wire Line
 	3250 1350 3250 1600
 $Comp
-L Device:C C?
+L mp3-rescue:C-Device C1
 U 1 1 5F6D6A5B
 P 1600 2050
-F 0 "C?" H 1715 2096 50  0000 L CNN
+F 0 "C1" H 1715 2096 50  0000 L CNN
 F 1 "4.7u" H 1715 2005 50  0000 L CNN
 F 2 "" H 1638 1900 50  0001 C CNN
 F 3 "~" H 1600 2050 50  0001 C CNN
@@ -115,10 +115,10 @@ F 3 "~" H 1600 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L mp3-rescue:C-Device C2
 U 1 1 5F6D7205
 P 3250 2050
-F 0 "C?" H 3365 2096 50  0000 L CNN
+F 0 "C2" H 3365 2096 50  0000 L CNN
 F 1 "10u" H 3365 2005 50  0000 L CNN
 F 2 "" H 3288 1900 50  0001 C CNN
 F 3 "~" H 3250 2050 50  0001 C CNN
@@ -143,7 +143,7 @@ Connection ~ 1800 1700
 Wire Wire Line
 	1800 1700 1800 1900
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6DE094
 P 1600 2200
 F 0 "#PWR?" H 1600 1950 50  0001 C CNN
@@ -154,7 +154,7 @@ F 3 "" H 1600 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6DE6FD
 P 3250 2200
 F 0 "#PWR?" H 3250 1950 50  0001 C CNN
@@ -175,10 +175,10 @@ Connection ~ 1600 1600
 Wire Wire Line
 	1600 1600 1800 1600
 $Comp
-L Device:LED D?
+L mp3-rescue:LED-Device D1
 U 1 1 5F6E17D4
 P 2100 1150
-F 0 "D?" H 2093 1367 50  0000 C CNN
+F 0 "D1" H 2093 1367 50  0000 C CNN
 F 1 "LED" H 2093 1276 50  0000 C CNN
 F 2 "" H 2100 1150 50  0001 C CNN
 F 3 "~" H 2100 1150 50  0001 C CNN
@@ -190,10 +190,10 @@ Wire Wire Line
 Wire Wire Line
 	2750 1600 3250 1600
 $Comp
-L Device:R R?
+L mp3-rescue:R-Device R1
 U 1 1 5F6F28E0
 P 1600 1300
-F 0 "R?" H 1670 1346 50  0000 L CNN
+F 0 "R1" H 1670 1346 50  0000 L CNN
 F 1 "200" H 1670 1255 50  0000 L CNN
 F 2 "" V 1530 1300 50  0001 C CNN
 F 3 "~" H 1600 1300 50  0001 C CNN
@@ -209,7 +209,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1150 2800 1800
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F710993
 P 5800 1250
 F 0 "#PWR?" H 5800 1000 50  0001 C CNN
@@ -222,10 +222,10 @@ $EndComp
 Text Label 6900 950  0    50   ~ 0
 Vdd
 $Comp
-L Device:C C?
+L mp3-rescue:C-Device C5
 U 1 1 5F6CF5F5
 P 6900 1400
-F 0 "C?" H 7015 1446 50  0000 L CNN
+F 0 "C5" H 7015 1446 50  0000 L CNN
 F 1 "2.2u" H 7015 1355 50  0000 L CNN
 F 2 "" H 6938 1250 50  0001 C CNN
 F 3 "~" H 6900 1400 50  0001 C CNN
@@ -233,7 +233,7 @@ F 3 "~" H 6900 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6D0BDE
 P 6900 1550
 F 0 "#PWR?" H 6900 1300 50  0001 C CNN
@@ -255,10 +255,10 @@ Wire Wire Line
 	4950 950  5100 950 
 Connection ~ 6900 950 
 $Comp
-L Device:R R?
+L mp3-rescue:R-Device R4
 U 1 1 5F6D8460
 P 6350 1250
-F 0 "R?" H 6420 1296 50  0000 L CNN
+F 0 "R4" H 6420 1296 50  0000 L CNN
 F 1 "24K" H 6420 1205 50  0000 L CNN
 F 2 "" V 6280 1250 50  0001 C CNN
 F 3 "~" H 6350 1250 50  0001 C CNN
@@ -266,10 +266,10 @@ F 3 "~" H 6350 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L mp3-rescue:R-Device R5
 U 1 1 5F6D8E8A
 P 6350 1650
-F 0 "R?" H 6420 1696 50  0000 L CNN
+F 0 "R5" H 6420 1696 50  0000 L CNN
 F 1 "3k" H 6420 1605 50  0000 L CNN
 F 2 "" V 6280 1650 50  0001 C CNN
 F 3 "~" H 6350 1650 50  0001 C CNN
@@ -277,7 +277,7 @@ F 3 "~" H 6350 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6DFFFD
 P 6350 1800
 F 0 "#PWR?" H 6350 1550 50  0001 C CNN
@@ -296,10 +296,10 @@ Wire Wire Line
 Wire Wire Line
 	6100 1450 6350 1450
 $Comp
-L Device:C C?
+L mp3-rescue:C-Device C3
 U 1 1 5F6E609D
 P 4800 2050
-F 0 "C?" H 4915 2096 50  0000 L CNN
+F 0 "C3" H 4915 2096 50  0000 L CNN
 F 1 "20u" H 4915 2005 50  0000 L CNN
 F 2 "" H 4838 1900 50  0001 C CNN
 F 3 "~" H 4800 2050 50  0001 C CNN
@@ -307,7 +307,7 @@ F 3 "~" H 4800 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F6E6704
 P 4800 2200
 F 0 "#PWR?" H 4800 1950 50  0001 C CNN
@@ -318,10 +318,10 @@ F 3 "" H 4800 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mp3:ADP2503 U?
+L mp3-rescue:ADP2503-mp3 U2
 U 1 1 5F6EC769
 P 4150 2600
-F 0 "U?" H 4150 3215 50  0000 C CNN
+F 0 "U2" H 4150 3215 50  0000 C CNN
 F 1 "ADP2503" H 4150 3124 50  0000 C CNN
 F 2 "" H 4150 3100 50  0001 C CNN
 F 3 "" H 4150 3100 50  0001 C CNN
@@ -348,10 +348,10 @@ Connection ~ 4800 1900
 Wire Wire Line
 	4800 1900 4900 1900
 $Comp
-L Device:R R?
+L mp3-rescue:R-Device R3
 U 1 1 5F785EA2
 P 5200 2650
-F 0 "R?" H 5270 2696 50  0000 L CNN
+F 0 "R3" H 5270 2696 50  0000 L CNN
 F 1 "330K" H 5270 2605 50  0000 L CNN
 F 2 "" V 5130 2650 50  0001 C CNN
 F 3 "~" H 5200 2650 50  0001 C CNN
@@ -359,10 +359,10 @@ F 3 "~" H 5200 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L mp3-rescue:R-Device R2
 U 1 1 5F786B9C
 P 5200 3050
-F 0 "R?" H 5270 3096 50  0000 L CNN
+F 0 "R2" H 5270 3096 50  0000 L CNN
 F 1 "47K" H 5270 3005 50  0000 L CNN
 F 2 "" V 5130 3050 50  0001 C CNN
 F 3 "~" H 5200 3050 50  0001 C CNN
@@ -370,7 +370,7 @@ F 3 "~" H 5200 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F787375
 P 5200 3200
 F 0 "#PWR?" H 5200 2950 50  0001 C CNN
@@ -407,7 +407,7 @@ Connection ~ 6350 950
 Wire Wire Line
 	6350 950  6900 950 
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F79B942
 P 3800 2900
 F 0 "#PWR?" H 3800 2650 50  0001 C CNN
@@ -418,7 +418,7 @@ F 3 "" H 3800 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F79BF46
 P 4500 2900
 F 0 "#PWR?" H 4500 2650 50  0001 C CNN
@@ -429,10 +429,10 @@ F 3 "" H 4500 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L?
+L mp3-rescue:L-Device L1
 U 1 1 5F7A22D3
 P 4150 1700
-F 0 "L?" V 4340 1700 50  0000 C CNN
+F 0 "L1" V 4340 1700 50  0000 C CNN
 F 1 "2uH" V 4249 1700 50  0000 C CNN
 F 2 "" H 4150 1700 50  0001 C CNN
 F 3 "~" H 4150 1700 50  0001 C CNN
@@ -453,7 +453,7 @@ Connection ~ 3700 2450
 Wire Wire Line
 	3700 2450 3700 2600
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F7A5D42
 P 3800 2750
 F 0 "#PWR?" H 3800 2500 50  0001 C CNN
@@ -470,10 +470,10 @@ Wire Wire Line
 Connection ~ 4950 950 
 Connection ~ 3700 1600
 $Comp
-L Device:C C?
+L mp3-rescue:C-Device C4
 U 1 1 5F7C24B2
 P 4250 1100
-F 0 "C?" H 4365 1146 50  0000 L CNN
+F 0 "C4" H 4365 1146 50  0000 L CNN
 F 1 "10u" H 4365 1055 50  0000 L CNN
 F 2 "" H 4288 950 50  0001 C CNN
 F 3 "~" H 4250 1100 50  0001 C CNN
@@ -484,7 +484,7 @@ Connection ~ 4250 950
 Wire Wire Line
 	4250 950  3700 950 
 $Comp
-L power:GND #PWR?
+L mp3-rescue:GND-power #PWR?
 U 1 1 5F7C2C0F
 P 4250 1250
 F 0 "#PWR?" H 4250 1000 50  0001 C CNN
